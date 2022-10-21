@@ -25,6 +25,19 @@ exports.create = function (req, res) {
 
         response.exito = true,
             response.msg = "El empleado se guardo correctamente"
-        res.json = response
+        res.json(response)
     })
 }
+
+exports.find = function (req, res) {
+    Empleado.find(function (err, empleados) {
+        res.json(empleados)
+    })
+}
+
+exports.findOne = function (req, res) {
+    Empleado.findOne({ _id: req.params.id }, function (err, empleado) {
+        res.json(empleado)
+    })
+}
+
