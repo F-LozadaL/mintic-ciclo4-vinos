@@ -5,17 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var database = require('./config/database');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
-var empleadosRouter = require('./routes/empleados.router');
-var usuarioRouter = require('./routes/empleados.router');
-var compraRouter = require('./routes/empleados.router');
+var usuarioRouter = require('./routes/usuario.router');
+var compraRouter = require('./routes/compra.router');
 var vinoRouter = require('./routes/vino.router');
 
 var app = express();
-
-
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -28,8 +23,6 @@ database.mongoConnect();
 
 //router
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/usuario', usuarioRouter);
 app.use('/vino', vinoRouter);
 app.use('/compra', compraRouter);

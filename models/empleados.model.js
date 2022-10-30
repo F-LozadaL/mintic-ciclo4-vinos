@@ -12,4 +12,4 @@ const EmpleadosSchema = new Schema({
 
 });
 
-module.exports = mongoose.model("empleados", EmpleadosSchema);
+// module.exports = mongoose.model("empleados", EmpleadosSchema);

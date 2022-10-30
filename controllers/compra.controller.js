@@ -6,10 +6,8 @@ let response = {
 
 exports.create = function (req, res) {
     let compra = new Compra({
-        wine_name: req.body.nombre,
-        liqueur_p: req.body.apellido_p,
-        quantity: req.body.apellido_m,
-        years_aged: req.body.telefono,
+        username: req.body.username,
+        date: req.body.date
     })
 
     compra.save(function (err) {
@@ -36,6 +34,43 @@ exports.find = function (req, res) {
 exports.findOne = function (req, res) {
     Compra.findOne({ _id: req.params.id }, function (err, compra) {
         res.json(compra)
+    })
+}
+//////
+exports.update = function (req, res) {
+    let compra = {
+        username: req.body.username,
+        date: req.body.date
+    }
+
+    Compra.findByIdAndUpdate(req.params.id, { $set: compra }, function (err) {
+        if (err) {
+            console.error(err),
+                response.exito = false,
+                response.msg = "Error al modificar la compra"
+            res.json(response)
+            return;
+        }
+
+        response.exito = true,
+            response.msg = "La compra modifico correctamente"
+        res.json(response)
+    })
+}
+
+exports.remove = function (req, res) {
+    Compra.findByIdAndRemove({ _id: req.params.id }, function (err) {
+        if (err) {
+            console.error(err),
+                response.exito = false,
+                response.msg = "Error al eliminar la compra"
+            res.json(response)
+            return;
+        }
+
+        response.exito = true,
+            response.msg = "La compra se ha eliminado correctamente"
+        res.json(response)
     })
 }
 
