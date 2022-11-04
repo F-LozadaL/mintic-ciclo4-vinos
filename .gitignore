@@ -2,8 +2,8 @@
 
 # dependencies
 
-proyecto-front/node_modules
-proyecto-back/node_modules
+proyecto-front/node_modules/
+proyecto-back/node_modules/
 /.pnp
 .pnp.js
 
