@@ -1,5 +1,11 @@
-#navbar #dropdown-header{
-    font-size: 50px;
+#navbar #dropdown-header .row:nth-child(1){
+    font-size: 60px;
     display: flex;
     justify-content: center;
+}
+#navbar #dropdown-header .row:nth-child(2){
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }

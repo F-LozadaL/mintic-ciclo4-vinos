@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import Login from './components/login/login';
+import AppRoutes from './components/router/router';
 import Menu from './components/navbar/navbar';
 // import Carousel from './components/carousel/carousel';
 // import Test from './components/test/test'
@@ -12,7 +12,7 @@ function App() {
       <Menu />
       <Container>
         {/* <Carousel /> */}
-        <Login />
+        <AppRoutes />
         {/* <Test /> */}
       </Container>
     </div>
