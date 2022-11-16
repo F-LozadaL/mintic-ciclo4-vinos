@@ -2,6 +2,9 @@ import React from 'react';
 import axios from 'axios'
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import './login.css'
+import { isNull } from 'util';
+// import Cookies from 'universal-cookie';
+
 import app from '../../app.json';
 const { APIHOST } = app
 
@@ -17,9 +20,15 @@ export default class login extends React.Component {
 
 		axios.post(`${APIHOST}/usuario/login`, {
 			username: this.state.username,
-			password: this.state.password
+			password: this.state.password,
 		}).then((res) => {
-			console.log(res);
+			if (isNull(res.data.token)) {
+				alert('usuario y/o contraseña invalidas');
+			} else {
+
+			}
+			console.log(res)
+
 		}).catch((err) => {
 			console.log(err);
 		});
@@ -58,7 +67,7 @@ export default class login extends React.Component {
 									/>
 								</Form.Group>
 
-								<Button variant="primary" type="submit"
+								<Button variant="primary"
 									onClick={() => {
 										this.iniciarSesion();
 									}}

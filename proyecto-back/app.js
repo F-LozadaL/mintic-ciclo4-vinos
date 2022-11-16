@@ -26,14 +26,17 @@ app.use(cors());//clase 22/11/09
 
 //mongo connection
 database.mongoConnect();
-app.use('/usuario', usuarioRouter)
-//app.use(auth)
+
+
+app.use('/usuario', usuarioRouter);
+app.use(auth)
+
 //router
 
-// app.use('/usuario', usuarioRouter);
 app.use('/vino', vinoRouter);
 app.use('/compra', compraRouter);
 
+// app.use('/usuario', usuarioRouter);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

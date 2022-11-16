@@ -3,6 +3,7 @@
 # dependencies
 proyecto-back/node_modules/
 proyecto-front/node_modules/
+empleados_front/
 
 /.pnp
 .pnp.js
