@@ -1,0 +1,37 @@
+#card-5{
+    width: 20%;
+    float: left;
+    margin-top: 24%; 
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  
+}
+#card-6{
+    width: 19%;
+    float: left;
+    margin-top: 24%; 
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  
+    
+}
+#card-7{
+    width: 20%;
+    float: left;
+    margin-top: 24%; 
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+  

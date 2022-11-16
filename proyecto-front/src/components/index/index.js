@@ -8,8 +8,8 @@ export default class Inicio extends React.Component {
 
     render() {
         return (
-            <h1 style={{ marginTop: 300 }}>
-                <br /> Pagina Inicio
+            <h1 style={{ marginTop: 50 }}>
+                <br /> VinLicorne
             </h1>
         );
     }

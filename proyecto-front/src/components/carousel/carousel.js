@@ -1,23 +1,22 @@
-import React from 'react'
-import { Carousel } from 'react-bootstrap'
-import './carousel.css'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import './carousel.css';
+
 export default class carousel extends React.Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
 
-	state = {}
-
-	render() {
-		return (
-			<div id='carousel'>
+    render() { 
+        return ( 
+            <div id='carousel'>
 				<Carousel>
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
-							src="https://escuelaversailles.com/wp-content/uploads/tipos-de-vino.jpg"
+							src="https://www.bonuszbrigad.hu/Content/bonuszbrigad_offer/112682/00007_36719.jpg"
 							alt="First slide"
 						/>
 						<Carousel.Caption>
@@ -28,7 +27,7 @@ export default class carousel extends React.Component {
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
-							src="https://gastronomicainternacional.com/wp-content/uploads/2020/06/tipos-de-vinos-tintos-uvas.jpg"
+							src="https://www.colferai.it/wp-content/uploads/2015/07/sld02.jpg"
 							alt="Second slide"
 						/>
 						<Carousel.Caption>
@@ -39,7 +38,7 @@ export default class carousel extends React.Component {
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
-							src="https://saborgourmet.com/wp-content/uploads/tipos-de-vinos-tintos-maridaje-clasificacion.jpg"
+							src="https://www.lacotealos.fr/ressources/images/0a575aa95e8e.jpeg"
 							alt="Third slide"
 						/>
 						<Carousel.Caption>
@@ -51,7 +50,8 @@ export default class carousel extends React.Component {
 					</Carousel.Item>
 				</Carousel>
 			</div>
-
-		);
-	}
+         );
+    }
 }
+ 
+ 

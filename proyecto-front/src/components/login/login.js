@@ -27,6 +27,7 @@ export default class login extends React.Component {
 			} else {
 
 			}
+			console.log(res)
 
 		}).catch((err) => {
 			console.log(err);
