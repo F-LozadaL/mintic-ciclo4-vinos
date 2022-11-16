@@ -21,8 +21,8 @@ export default class menu extends React.Component {
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
-							{/* <Nav.Link href="#home">Productos</Nav.Link>
-							<Nav.Link href="#link">Carro</Nav.Link> */}
+							<Nav.Link href="/catalog">Catalogo</Nav.Link>
+							<Nav.Link href="/cart">Carro</Nav.Link>
 
 						</Nav>
 						<DropdownButton id="dropdown-basic-button" title="Usuario">
@@ -40,7 +40,7 @@ export default class menu extends React.Component {
 							<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
 							<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
 						</DropdownButton>
-						<Button variant="light" href=''>Login</Button>
+						<Button variant="light" href='/login'>Login</Button>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
