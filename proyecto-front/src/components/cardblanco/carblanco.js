@@ -10,16 +10,16 @@ export default class fichablanco extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={{marginTop:50}}>
-                <br/> VinLicorne
-            </h1> 
-            <h2>Vinos Blancos
-                
-            </h2>
+        <h1 style={{ marginTop: 50 }}>
+          <br /> VinLicorne
+        </h1>
+        <h2>Vinos Blancos
+
+        </h2>
         <Card id="card-5">
           <Card.Img
             variant="top"
-            src="https://vvb.com.mx/wp/wp-content/uploads/2021/01/EL-COTO-BLANCO_Vertical_principal.jpg"
+            src={require("../../assets/blanco/ALBARINO-MARTIN-CODAX_Vertical_principal.jpg")}
           />
           <Card.Body>
             <Card.Title>El Coto|Blanco</Card.Title>
@@ -33,7 +33,7 @@ export default class fichablanco extends React.Component {
         <Card id="card-6">
           <Card.Img
             variant="top"
-            src="https://vvb.com.mx/wp/wp-content/uploads/2021/01/ALBARINO-MARTIN-CODAX_Vertical_principal.jpg"
+            src={require("../../assets/blanco/EL-COTO-BLANCO_Vertical_principal.jpg")}
           />
           <Card.Body>
             <Card.Title>Martín Códax|Albariño Lías- Rias Baixas</Card.Title>
@@ -47,7 +47,7 @@ export default class fichablanco extends React.Component {
         <Card id="card-7">
           <Card.Img
             variant="top"
-            src="https://vvb.com.mx/wp/wp-content/uploads/2021/01/LOS_VASCOS_ROSE_2020_VINCO_Vertical_principal-600x1055.jpg"
+            src={require("../../assets/blanco/LOS_VASCOS_ROSE_2020_VINCO_Vertical_principal-600x1055.jpg")}
           />
           <Card.Body>
             <Card.Title>Los Vascos|Rosé</Card.Title>
