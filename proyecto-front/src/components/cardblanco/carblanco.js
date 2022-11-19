@@ -13,9 +13,7 @@ export default class fichablanco extends React.Component {
         <h1 style={{ marginTop: 50 }}>
           <br /> VinLicorne
         </h1>
-        <h2>Vinos Blancos
-
-        </h2>
+        <h2>Vinos Blancos</h2>
         <Card id="card-5">
           <Card.Img
             variant="top"

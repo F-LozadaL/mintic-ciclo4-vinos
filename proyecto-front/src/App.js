@@ -14,7 +14,7 @@ function App() {
         <AppRoutes />
       </Container>
 
-      <Carousel />
+      {/* <Carousel /> */}
     </div>
   );
 }
