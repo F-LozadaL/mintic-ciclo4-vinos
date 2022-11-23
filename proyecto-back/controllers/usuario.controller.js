@@ -30,6 +30,7 @@ exports.login = function (req, res, next) {
           "__recret__",
           { expiresIn: "12h" }
         );
+        response._id = user._id;
       }
       res.json(response);
     }

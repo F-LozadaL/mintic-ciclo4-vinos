@@ -8,6 +8,7 @@ const clienteSchema = new Schema({
   email: { type: String, required: true, max: 100 },
   address: { type: String, required: false, max: 100 },
   balance: { type: Number, required: false, default: 0 },
+  cart: { type: Array, default: [] },
 });
 
 module.exports = mongoose.model("cliente", clienteSchema);

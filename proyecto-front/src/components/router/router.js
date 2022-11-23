@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Inicio from "../index/index";
 import Login from "../login/login";
 import PrivateRouter from "../auth/privaterouter";
-import Clientes from "../clientes/clientes.buscar";
+import Clientes from "../clientes/inicioc";
+import Vinos from "../vino/iniciov";
 
 import Regisv from "../regis_v/regis_v"; /* se creara un formulario para registrat vinos, si es necesario borrar en todas las importaciones */
 import Fichablanco from "../cardblanco/carblanco";
@@ -18,6 +19,7 @@ export default function AppRoutes() {
       <Switch>
         <Route exact path={["/login"]} component={Login} />
         <PrivateRouter exact path={["/clientes"]} component={Clientes} />
+        <PrivateRouter exact path={["/vinos"]} component={Vinos} />
         <Route exact path={["/", "/index"]} component={Fichaprincipal} />
 
         <Route exact path={["/regis_v"]} component={Regisv} />

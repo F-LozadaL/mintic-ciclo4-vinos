@@ -1,16 +1,13 @@
-#clientes-buscar-container{
+#vinos-buscar-container,
+#vinos-crear-container{
     margin-top: 50px;    
 }
 
-#clientes-container{
+#vinos-container{
     margin-top: 130px;    
 }
 
-#clientes-crear-container{
-    margin-top: 50px;   
-}
-
-#clientes-crear-container .form-label{
+#vinos-crear-container .form-label{
     float: left;
     margin-top: 10px;
 }

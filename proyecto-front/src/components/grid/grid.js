@@ -40,7 +40,7 @@ export default class dataGrid extends React.Component {
       custom: true,
       totalSize: this.state.rows.length,
     };
-    console.log(this.state.rows);
+    // console.log(this.state.rows);
     return (
       <ToolkitProvider
         keyField="_id"

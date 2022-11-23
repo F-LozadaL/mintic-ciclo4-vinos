@@ -26,12 +26,11 @@ export default class ficha extends React.Component {
   }
 
   render() {
-    console.log(this.state.rows);
     return (
       <div>
         {this.state.rows.map((r) => {
           return (
-            <Card key={r._id} id="card-5">
+            <Card key={r._id} className="card">
               <Card.Img
                 variant="top"
                 src={require("../../assets/blanco/ALBARINO-MARTIN-CODAX_Vertical_principal.jpg")}

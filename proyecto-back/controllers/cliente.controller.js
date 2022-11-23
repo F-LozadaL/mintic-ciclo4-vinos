@@ -81,3 +81,19 @@ exports.remove = function (req, res) {
     res.json(response);
   });
 };
+
+exports.addProduct = function (req, res) {
+  Cliente.aggregate({ _id: req.params.id }, function (err) {
+    if (err) {
+      console.error(err),
+        (response.exito = false),
+        (response.msg = "Error al eliminar el cliente");
+      res.json(response);
+      return;
+    }
+
+    (response.exito = true),
+      (response.msg = "El cliente se ha eliminado correctamente");
+    res.json(response);
+  });
+};
