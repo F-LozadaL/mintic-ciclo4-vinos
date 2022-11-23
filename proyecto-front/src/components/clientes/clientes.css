@@ -1,0 +1,31 @@
+#clientes-buscar-container{
+    margin-top: 50px;    
+}
+
+#clientes-container{
+    margin-top: 130px;    
+}
+
+#clientes-crear-container{
+    margin-top: 50px;   
+}
+
+#clientes-crear-container .form-label{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle{
+    float:left;
+    margin-bottom:20px;
+}
+
+.search-Label {
+    float: right;
+    padding-bottom: 10px;
+}
+
+.sr-only {
+    font-size: 0;
+}

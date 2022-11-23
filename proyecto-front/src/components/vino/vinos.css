@@ -1,0 +1,28 @@
+#vinos-buscar-container,
+#vinos-crear-container{
+    margin-top: 50px;    
+}
+
+#vinos-container{
+    margin-top: 130px;    
+}
+
+#vinos-crear-container .form-label{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle{
+    float:left;
+    margin-bottom:20px;
+}
+
+.search-Label {
+    float: right;
+    padding-bottom: 10px;
+}
+
+.sr-only {
+    font-size: 0;
+}

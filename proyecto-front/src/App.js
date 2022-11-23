@@ -1,21 +1,17 @@
 // import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-import AppRoutes from './components/router/router';
-import Menu from './components/navbar/navbar';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "./components/carousel/carousel";
-import Fichaprincipal from "./components/cardprincipal/cardprincipal";
+import Todo from "./components/Todo/todo";
+
 function App() {
+  console.log("router");
+
   return (
     <div className="App">
-      <Menu />
-      <Container>
-        <AppRoutes />
-      </Container>
+      <Todo />
 
-      <Carousel />
-      <Fichaprincipal />
+      {/* <Carousel /> */}
     </div>
   );
 }
