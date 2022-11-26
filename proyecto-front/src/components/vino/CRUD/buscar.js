@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "../vinos.css";
-// import { request } from "../helper/helper";
 import DataGrid from "../../grid/grid";
+import Loading from "../../loading/loading";
+import MessagePrompt from "../../prompts/message";
 
 const columns = [
   {
@@ -31,29 +32,49 @@ const columns = [
 export default class VinosBuscar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      loading: false,
+      idVino: null,
+      message: {
+        text: "",
+        show: false,
+      },
+    };
+
+    this.onClickEditButton = this.onClickEditButton.bind(this);
   }
 
-  // componentDidMount() {
-  //   request
-  //     .get(this.props.url)
-  //     .then((response) => {
-  //       this.setState({ rows: response.data });
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+  componentDidMount() {}
+
+  onClickEditButton(row) {
+    this.props.setIdVino(row._id);
+    this.props.changeTab("editar");
+    console.log("comp buscar");
+  }
 
   render() {
     return (
       <Container id="vinos-buscar-container">
+        <MessagePrompt
+          text={this.state.message.text}
+          show={this.state.message.show}
+          duration={2500}
+          onExited={this.onExitedMessage}
+        />
+
+        <Loading show={this.state.loading} />
+
         <Row>
           <h1>Buscar Vinos</h1>
         </Row>
         <Row>
           {/* <DataGrid url="/usuarios" columns={columns} /> */}
-          <DataGrid url="/vino" columns={columns} />
+          <DataGrid
+            url="/vino"
+            columns={columns}
+            showEditButton={true}
+            onClickEditButton={this.onClickEditButton}
+          />
         </Row>
       </Container>
     );

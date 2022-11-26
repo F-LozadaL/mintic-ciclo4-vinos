@@ -5,8 +5,6 @@ import Carousel from "./components/carousel/carousel";
 import Todo from "./components/Todo/todo";
 
 function App() {
-  console.log("router");
-
   return (
     <div className="App">
       <Todo />

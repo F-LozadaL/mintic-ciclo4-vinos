@@ -27,6 +27,11 @@ function renovarSesion() {
   return sesion;
 }
 
+export function cancelarSesion() {
+  cookies.remove("_s", { path: "/" });
+  cookies.remove("_id", { path: "/" });
+}
+
 export const request = {
   get: function (services) {
     let token = renovarSesion();
@@ -39,6 +44,14 @@ export const request = {
   post: function (services, data) {
     let token = renovarSesion();
     return axios.post(`${APIHOST}${services}`, data, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  },
+  put: function (services, data) {
+    let token = renovarSesion();
+    return axios.put(`${APIHOST}${services}`, data, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
