@@ -56,8 +56,12 @@ export default class ClientesBuscar extends React.Component {
           <h1>Buscar Clientes</h1>
         </Row>
         <Row>
-          {/* <DataGrid url="/usuarios" columns={columns} /> */}
-          <DataGrid url="/cliente" columns={columns} />
+          <DataGrid
+            url="/cliente"
+            columns={columns}
+            showEditButton={true}
+            onClickEditButton={this.onClickEditButton}
+          />
         </Row>
       </Container>
     );
